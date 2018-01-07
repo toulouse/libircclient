@@ -16,11 +16,15 @@
 #ifndef INCLUDE_IRC_SESSION_H
 #define INCLUDE_IRC_SESSION_H
 
+#include <openssl/ssl.h>
+#include <openssl/err.h>
+#include <openssl/rand.h>
 
 #include "params.h"
 #include "dcc.h"
 #include "libirc_events.h"
 
+typedef int socket_t;
 
 // Session flags
 #define SESSIONFL_MOTD_RECEIVED			(0x00000001)

@@ -15,7 +15,13 @@
 #ifndef INCLUDE_IRC_DCC_H
 #define INCLUDE_IRC_DCC_H
 
+#include <netinet/in.h>
+#include <pthread.h>
+#include <stdio.h>
+#include <sys/socket.h>
 
+typedef pthread_mutex_t         port_mutex_t;
+typedef int socket_t;
 /*
  * This structure keeps the state of a single DCC connection.
  */

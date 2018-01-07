@@ -11,6 +11,7 @@
  * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public 
  * License for more details.
  */
+#include "libircclient.h"
 
 #define LIBIRC_DCC_CHAT			1
 #define LIBIRC_DCC_SENDFILE		2

@@ -21,6 +21,7 @@
 	#include <arpa/inet.h>	
 	#include <netinet/in.h>
 	#include <fcntl.h>
+  #include <errno.h>
 
 	#define IS_SOCKET_ERROR(a)	((a)<0)
 	typedef int				socket_t;

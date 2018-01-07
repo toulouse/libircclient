@@ -11,6 +11,12 @@
  * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public 
  * License for more details.
  */
+#include <stdio.h>
+#include <sys/select.h> /* fd_set */
+#include <time.h>
+
+#include "libircclient.h"
+#include "session.h"
 
 static void libirc_add_to_set (int fd, fd_set *set, int * maxfd)
 {

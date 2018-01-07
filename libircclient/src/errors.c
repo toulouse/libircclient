@@ -12,6 +12,9 @@
  * License for more details.
  */
 
+#include "libircclient.h"
+#include "libirc_errors.h"
+
 static const char * libirc_strerror[LIBIRC_ERR_MAX] = 
 {
 	"No error",
